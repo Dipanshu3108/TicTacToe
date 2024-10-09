@@ -63,13 +63,6 @@ class MainActivity : AppCompatActivity() {
                     mediumMode -> aiMoveMedium()
                     hardMode -> aiMoveHard()
                 }
-//                if (hardMode) {
-//                    aiMoveHard()
-//                } else if (easyMode) {
-//                    aiMove()
-//                } else if (mediumMode){
-//                    aiMoveMedium()
-//                }
             }
         }
     }
@@ -321,9 +314,4 @@ class MainActivity : AppCompatActivity() {
         return 0.0
     }
 
-    private fun updateGameUI(moveIndex: Int, resId: Int) {
-        blocks[moveIndex].setImageResource(resId)
-        activePlayer = 1.0
-        checkWinner()
-    }
 }
